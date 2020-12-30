@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+/**
+ * Hide increment handles on number inputs.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/**
+ * Application container
+ */
+#App {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/**
+ * Timer
+ */
+#Timer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+}
+
+/**
+ * Timer button
+ */
+.Timer__button {
+  margin: 0;
+  padding: 1em;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+}
+
+.Timer__button:hover,
+.Timer__button:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Timer__button:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/**
+ * Timer label
+ */
+.Timer__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1em;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/**
+ * Timer icon
+ */
+.Timer__icon {
+  fill: #fff;
+}
+
+/**
+ * Timer display
+ */
+#Timer__display {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#Timer__display--info {
+  display: flex;
+}
+
+#Timer__display--info > * {
+  margin: 0 0.5em;
+}
+
+#Timer__display--time {
+  height: 180px;
+  margin: 0;
+  font-size: 156px;
+  font-weight: 300;
+}
+
+#Timer__display--info > .Timer__label > .Timer__icon {
+  margin-right: 0.5em;
+}
+
+/**
+ * Timer controls
+ */
+#Timer__controls {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+#Timer__controls > .Timer__button {
+  flex: 1;
+  font-size: 48px;
+}
+
+/**
+ * Timer form
+ */
+.Timer__form {
+  display: flex;
+  flex-direction: column;
+  align-items: strecth;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #222;
+}
+
+.Timer__field {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  margin: 1em 2em;
+}
+
+.Timer__field:first-of-type {
+  margin-top: 2em;
+}
+
+.Timer__field:last-of-type {
+  margin-bottom: 2em;
+}
+
+.Timer__input {
+  flex: 1;
+  padding: 50px;
+  margin: 0;
+  font-size: 48px;
+  text-align: center;
+  border: none;
+}
+
+.Timer__field > .Timer__label {
+  flex: 1;
+  padding: 50px;
+}
+
+.Timer__form > .Timer__button {
+  flex: 1;
+  font-size: 48px;
+}
+
+/**
+ * Buttons
+ */
+#Timer__start {
+  color: rgb(0, 225, 0);
+  background-color: rgba(0, 225, 0, 0.2);
+}
+
+#Timer__start:hover,
+#Timer__start:focus {
+  background-color: rgba(0, 225, 0, 0.25);
+}
+
+#Timer__start:active {
+  background-color: rgba(0, 225, 0, 0.3);
+}
+
+#Timer__stop {
+  color: rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+#Timer__stop:hover,
+#Timer__stop:focus {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+#Timer__stop:active {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+#Timer__set {
+  color: rgb(0, 255, 255);
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+#Timer__set:hover,
+#Timer__set:focus {
+  background-color: rgba(0, 255, 255, 0.25);
+}
+
+#Timer__set:active {
+  background-color: rgba(0, 255, 255, 0.3);
+}
